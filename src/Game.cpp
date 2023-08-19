@@ -15,7 +15,7 @@
 #include "../headers/vect.hpp"
 
 //oof constructor
-Game::Game(const int width_in, const int height_in, const char title_in[], int boid_amount) :
+Game::Game(const int width_in, const int height_in, const char title_in[]) :
 m_width(width_in), m_height(height_in),
 window(sf::VideoMode(width_in, height_in), title_in, sf::Style::Default),
 ev() {
@@ -25,7 +25,9 @@ ev() {
 
 	for (Boid& b : boids) {
 		b.pos = vect(rand() % m_width, rand() % m_height);
-		b.col = sf::Color(rand() % 200 + 55, rand() % 40 + 5, rand() % 40 + 5);
+		b.col = sf::Color(rand() % 150 + 105, rand() % 100 + 5, rand() % 50 + 5);
+		b.moveSpeed += (((float) (rand() % 1000) / 4000));
+		std::cout << b.moveSpeed << "\n";
 		if(rand() % 2 == 0) {
 			b.dir = vect(rand(), rand());
 		} else {

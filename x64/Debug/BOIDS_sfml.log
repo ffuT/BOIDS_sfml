@@ -1,3 +1,11 @@
-﻿  Boid.cpp
-C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\src\Boid.cpp(24,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  BOIDS_sfml.vcxproj -> C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\x64\Debug\BOIDS_sfml.exe
+﻿  Game.cpp
+C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\headers\Game.hpp(40,15): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\headers\Game.hpp(41,15): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\Game.cpp(24,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\Game.cpp(27,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\Game.cpp(27,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\Game.cpp(32,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\Game.cpp(32,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\Game.cpp(34,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\Game.cpp(34,17): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  BOIDS_sfml.vcxproj -> C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\x64\Debug\BOIDS_sfml.exe

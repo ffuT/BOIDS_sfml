@@ -19,7 +19,7 @@ public:
 
   void draw(sf::RenderWindow*);
 
-  float moveSpeed = 1;
+  float moveSpeed = 0.5;
   vect pos;
   vect dir;
   sf::Color col;

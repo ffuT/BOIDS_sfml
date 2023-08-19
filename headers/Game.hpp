@@ -17,7 +17,7 @@
 
 class Game{
 public :
-  Game(const int width_in, const int height_in, const char title_in[], const int boid_amount);
+  Game(const int width_in, const int height_in, const char title_in[]);
   ~Game();
 
   void start();
@@ -35,7 +35,7 @@ private :
   sf::RenderWindow* windowptr;
   sf::Event ev;
   
-  Boid boids[250];
+  Boid boids[150];
   const float seperationStr = 2.5;  //pushdir * str / dist
   const float alignStr = 0.00004; //dir * str * dist
   const float cohesionStr = 0.05; //pulldir * str

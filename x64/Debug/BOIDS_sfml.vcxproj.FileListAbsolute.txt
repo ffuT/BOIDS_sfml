@@ -1,1 +1,2 @@
 C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\x64\Debug\BOIDS_sfml.exe
+C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\x64\Debug\BOIDS_sfml.exe
