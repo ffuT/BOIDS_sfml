@@ -1,0 +1,26 @@
+﻿  Boid.cpp
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\src\Boid.cpp(24,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Game.cpp
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\headers\Game.hpp(40,15): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\headers\Game.hpp(41,15): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\src\Game.cpp(24,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\src\Game.cpp(27,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\src\Game.cpp(27,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\src\Game.cpp(30,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\src\Game.cpp(30,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\src\Game.cpp(32,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\src\Game.cpp(32,17): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  main.cpp
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\headers\Game.hpp(40,15): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\headers\Game.hpp(41,15): warning C4305: 'initializing': truncation from 'double' to 'const float'
+  vect.cpp
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\src\vect.cpp(41,14): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\src\vect.cpp(45,23): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\src\vect.cpp(46,22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\src\vect.cpp(50,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\src\vect.cpp(56,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 58 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  BOIDS_sfml.vcxproj -> C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\x64\Release\BOIDS_sfml.exe

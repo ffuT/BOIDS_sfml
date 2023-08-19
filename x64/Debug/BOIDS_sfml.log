@@ -1,0 +1,3 @@
+﻿  Boid.cpp
+C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\src\Boid.cpp(24,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  BOIDS_sfml.vcxproj -> C:\Users\Tuff\Documents\GitHub\programming\CPP\Projects\BOIDS_sfml\x64\Debug\BOIDS_sfml.exe
