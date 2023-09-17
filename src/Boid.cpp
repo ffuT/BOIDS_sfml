@@ -21,7 +21,6 @@ bool Boid::operator==(Boid other) {
 }
 
 void Boid::draw(sf::RenderWindow* winptr) {
-  srand(time(0));
   //body
   sf::RectangleShape rect(sf::Vector2f(8, 8));
   rect.setPosition(sf::Vector2f(pos.x-4, pos.y-4));

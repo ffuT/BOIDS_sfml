@@ -15,25 +15,26 @@
 #include "../headers/vect.hpp"
 
 //oof constructor
-Game::Game(const int width_in, const int height_in, const char title_in[]) :
+Game::Game(const int width_in, const int height_in, const char title_in[], unsigned int boid_amount_in) :
 m_width(width_in), m_height(height_in),
-window(sf::VideoMode(width_in, height_in), title_in, sf::Style::Default),
+window(sf::VideoMode(width_in, height_in), title_in, sf::Style::Default), boid_amount(boid_amount_in), boids(new Boid[boid_amount_in]),
 ev() {
 	//do stuff
 	windowptr = &window;
 	srand(time(0));
 
-	for (Boid& b : boids) {
-		b.pos = vect(rand() % m_width, rand() % m_height);
-		b.col = sf::Color(rand() % 150 + 105, rand() % 100 + 5, rand() % 50 + 5);
-		b.moveSpeed += (((float) (rand() % 1000) / 4000));
-		std::cout << b.moveSpeed << "\n";
+	//initialize boids with random pos, color, speed, and direction
+	for (int i = 0; i <= boid_amount - 1; i++) {
+		boids[i].pos = vect(rand() % m_width, rand() % m_height);
+		boids[i].col = sf::Color(rand() % 150 + 105, rand() % 100 + 5, rand() % 50 + 5);
+		boids[i].moveSpeed += (((float) (rand() % 1000) / 4000));
+		std::cout << boids[i].moveSpeed << "\n";
 		if(rand() % 2 == 0) {
-			b.dir = vect(rand(), rand());
+			boids[i].dir = vect(rand(), rand());
 		} else {
-			b.dir = vect(-rand(), -rand());
+			boids[i].dir = vect(-rand(), -rand());
 		}
-		b.dir.normalize();
+		boids[i].dir.normalize();
 	}
 }	 
 
@@ -91,53 +92,52 @@ void Game::start() {
 void Game::render() {
 	window.clear(sf::Color(0, 0, 0));	//clear window
 
-	for (Boid& b : boids) {	//for all boids do this
+	for (int i = 0; i <= boid_amount - 1; i++) {	//for all boids do this
 		//reset position
-		if (b.pos.x < 0)
-			b.pos.x += m_width;
-		if (b.pos.y < 0)
-			b.pos.y += m_height;
-		if (b.pos.x > m_width)
-			b.pos.x -= m_width;
-		if (b.pos.y > m_height)
-			b.pos.y -= m_height;
+		if (boids[i].pos.x < 0)
+			boids[i].pos.x += m_width;
+		if (boids[i].pos.y < 0)
+			boids[i].pos.y += m_height;
+		if (boids[i].pos.x > m_width)
+			boids[i].pos.x -= m_width;
+		if (boids[i].pos.y > m_height)
+			boids[i].pos.y -= m_height;
 		
 		//cohesion
 		vect pull(0, 0);
-		for (Boid& o : boids) {	//iterate over all boids again BIG O(n^2)
-			if (b == o)	//if itself go next
+		for (int j = 0; j <= boid_amount - 1; j++) {	//iterate over all boids again BIG O(n^2)
+			if (boids[i] == boids[j])	//if itself go next
 				continue;
 
-			vect dist(o.pos - b.pos);
+			vect dist(boids[j].pos - boids[i].pos);
 			float distmag = dist.mag();
 
-			constexpr float maxdist = 75;
 
 			//cohesion
-			//if (distmag <= maxdist * 2)
-				pull += (o.pos - b.pos);
+			if (distmag	<= maxCohesionDist)
+				pull += (boids[j].pos - boids[i].pos);
 
-			if(distmag >= maxdist)
+			if(distmag >= 65)
 				continue;
 
 			//seperation
-				vect push(b.pos - o.pos);	//pushforce direction
+				vect push(boids[i].pos - boids[j].pos);	//pushforce direction
 				push.normalize();
 			//alignment
-				vect align(o.dir * alignStr);
+				vect align(boids[j].dir * alignStr);
 
 			//apply forces
-				b.dir += (push * seperationStr / distmag);
-				b.dir += align * distmag;
-				b.dir.normalize();
+				boids[i].dir += (push * seperationStr / distmag);
+				boids[i].dir += align * distmag;
+				boids[i].dir.normalize();
 		}
 		//cohesion
 		if(!(pull == vect(0,0))){
 			pull.normalize();
-			b.dir += pull * cohesionStr;
-			b.dir.normalize();
+			boids[i].dir += pull * cohesionStr;
+			boids[i].dir.normalize();
 		}
-		b.draw(windowptr);
+		boids[i].draw(windowptr);
 	}
 
 	window.display();

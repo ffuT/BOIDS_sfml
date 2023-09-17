@@ -3,7 +3,7 @@
 
 int main(){
 
-  Game game(1024, 768, "Boids");
+  Game game(1024, 768, "Boids", 100);
   game.start();
 
   return 0;

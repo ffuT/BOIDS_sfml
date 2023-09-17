@@ -1,19 +1,9 @@
-﻿  Game.cpp
-C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\headers\Game.hpp(40,15): warning C4305: 'initializing': truncation from 'double' to 'const float'
+﻿  main.cpp
 C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\headers\Game.hpp(41,15): warning C4305: 'initializing': truncation from 'double' to 'const float'
-C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\Game.cpp(24,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\Game.cpp(27,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\Game.cpp(27,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\Game.cpp(32,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\Game.cpp(32,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\Game.cpp(34,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\Game.cpp(34,17): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  main.cpp
-C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\headers\Game.hpp(40,15): warning C4305: 'initializing': truncation from 'double' to 'const float'
-C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\headers\Game.hpp(41,15): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\headers\Game.hpp(42,15): warning C4305: 'initializing': truncation from 'double' to 'const float'
   Generating code
-  5 of 58 functions ( 8.6%) were compiled, the rest were copied from previous compilation.
-    1 functions were new in current compilation
-    4 functions had inline decision re-evaluated but remain unchanged
+  2 of 59 functions ( 3.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   BOIDS_sfml.vcxproj -> C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\x64\Release\BOIDS_sfml.exe
