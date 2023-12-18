@@ -14,7 +14,6 @@
 #include "../headers/Boid.hpp"
 #include "../headers/vect.hpp"
 
-
 class Game{
 public :
   Game(const int width_in, const int height_in, const char title_in[], unsigned int boid_amount);

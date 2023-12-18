@@ -1,6 +1,10 @@
 ﻿  main.cpp
-C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\headers\Game.hpp(41,26): warning C4305: 'initializing': truncation from 'double' to 'const float'
-C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\headers\Game.hpp(42,29): warning C4305: 'initializing': truncation from 'double' to 'const float'
-C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\main.cpp(79,65): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\main.cpp(79,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\headers\Game.hpp(40,26): warning C4305: 'initializing': truncation from 'double' to 'const float'
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\headers\Game.hpp(41,29): warning C4305: 'initializing': truncation from 'double' to 'const float'
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\main.cpp(80,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\src\main.cpp(83,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   BOIDS_sfml.vcxproj -> C:\Users\Tuff\Documents\GitHub\BOIDS_sfml\x64\Debug\BOIDS_sfml.exe
